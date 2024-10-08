@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: #ffffff;
+}
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+}
+.navbar .navbar-toggler {
+  background-color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.container-fluid {
+  width: 100%;
+}
+.container-fluid .navbar-brand img {
+  height: 86px;
+}
+.container-fluid .navbar-brand img:hover {
+  cursor: pointer;
+}
+.collapse .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "koulen";
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+.collapse .navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.973);
+  border-radius: 4px;
+}
+.container-xxl {
+  background-image: url(./$199.png);
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(158, 186, 222);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  align-items: center;
+}
+.container-xxl .card-title h2 {
+  font-size: 60px;
+  font-family: "koulen";
+  color: #ffffff;
+}
+.container-xxl .card-title h3 {
+  font-size: 60px;
+  font-family: "koulen";
+  color: #cc00ff;
+}
+.container-xxl .card-title p {
+  font-size: 12px;
+  font-family: "Oswald";
+  color: #ffffff;
+}
+.container-xxl .card-title button {
+  background-color: rgb(255, 255, 255);
+  height: 36px;
+  width: 170px;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  font-family: "koulen";
+  font-size: 12px;
+  color: #000000;
+}
+.container-xxl .card-title button:hover {
+  color: #000000;
+  transform: scale(0.95);
+  background-color: #cc00ff;
+  box-shadow: 4px 3px 3px #211300;
+}
+.container-xxl .img-fluid img {
+  height: 250px;
+  filter: drop-shadow(4px 3px 3px #047a65);
+}
+.container-xxl .img-fluid img:hover {
+  cursor: pointer;
+}
+.text-h2 {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.text-h2 i {
+  font-size: 20px;
+  color: #000000;
+}
+.text-h2 p{
+  font-size: 25px;
+  font-family: 'koulen';
+  font-weight: bold;
+}
+.category {
+  background-color: #ffffff;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category .list-category {
+  background-color: #ffffff;
+  filter: drop-shadow(4px 3px 3px #00000050);
+  height: 150px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.list-category .item {
+  text-align: center;
+}
+.item .icon-link{
+  background-color: #f2f2f2;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 4px 3px 3px #d6d6d6;
+  transition-duration: 0.3s;
+}
+.item .icon-link:hover{
+  background-color: #06a288;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.list-category .item i {
+  font-size: 20px;
+  color: #000000;
+}
+.list-category .item p {
+  font-size: 12px;
+  font-family: 'koulen';
+  font-weight: bold;
+}
+.product{
+  height: 400px;
+  background-color: #d6d6d6;
+}
+
+
+
+
+
+
+@media screen and (max-width: 970px) {
+  .container-fluid .navbar-brand img {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-xxl .card-title h2 p {
+    font-size: 40px;
+  }
+  .container-xxl .card-title h2 {
+    font-size: 40px;
+  }
+  .container-xxl .img-fluid img {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container-xxl .card-title h2 p {
+    font-size: 30px;
+  }
+  .container-xxl .card-title h2 {
+    font-size: 30px;
+  }
+  .container-xxl .card-title h3 {
+    font-size: 30px;
+  }
+  .container-xxl .img-fluid img {
+    height: 140px;
+  }
+  .container-xxl .card-title button {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .container-xxl .card-title h2 p {
+    font-size: 18px;
+  }
+  .container-xxl .card-title h2 {
+    font-size: 18px;
+  }
+  .container-xxl .img-fluid img {
+    height: 100px;
+  }
+  .container-xxl .card-title button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .category .list-category{
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 0px);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 400px){
+  .category {
+    height: 300px;
+  }
+  .category .list-category{
+    height: 200px;
+  }
+}
